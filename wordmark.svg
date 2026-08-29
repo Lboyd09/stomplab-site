@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 36" role="img" aria-label="StompLab">
+  <rect x="0.5" y="3.5" width="29" height="29" rx="6" fill="#141412" stroke="#2c2c28"/>
+  <rect x="5" y="8" width="20" height="10" rx="1.5" fill="#070707" stroke="#c8ff3d" stroke-width="0.9"/>
+  <rect x="6.8" y="9.8" width="4.4" height="6.4" rx="0.6" fill="#c8ff3d"/>
+  <rect x="12.3" y="9.8" width="4.4" height="6.4" rx="0.6" fill="#ffb020" opacity="0.85"/>
+  <rect x="17.8" y="9.8" width="4.4" height="6.4" rx="0.6" fill="#3a3a36"/>
+  <circle cx="8.6" cy="25.4" r="2.1" fill="#c8ff3d"/>
+  <circle cx="15" cy="25.4" r="2.1" fill="#2a2a26"/>
+  <circle cx="21.4" cy="25.4" r="2.1" fill="#2a2a26"/>
+  <text x="40" y="25.5" font-family="Arial Narrow, Arial, Helvetica, sans-serif" font-size="20" font-weight="800" letter-spacing="2.4" fill="#f4f4ee">STOMP LAB</text>
+</svg>
