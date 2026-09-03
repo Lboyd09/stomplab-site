@@ -4,54 +4,81 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy — StompLab</title>
-  <meta name="description" content="StompLab marketing site collects no personal data. Research API keys stay in your browser on the app.">
-  <meta name="theme-color" content="#090908">
-  <meta name="robots" content="index,follow">
+  <meta name="description" content="How StompLab handles email sign-in, Polar subscriptions, and AI song research. Short and honest.">
+  <meta name="theme-color" content="#0B0C0E">
+  <meta name="color-scheme" content="dark">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="./privacy">
+  <meta property="og:title" content="Privacy — StompLab">
+  <meta property="og:description" content="Auth emails, Polar subscriptions, AI research — what StompLab collects and why.">
+  <meta property="og:image" content="https://stomplab.vercel.app/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://stomplab.vercel.app/og.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="top">
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="wordmark" href="index.html">
-        <img src="wordmark.svg" width="248" height="36" alt="StompLab">
-      </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="index.html#how">How it works</a>
-        <a href="index.html#hardware">Hardware</a>
-        <a class="btn btn-primary" href="https://stomplab.vercel.app">Try it</a>
+      <a class="wordmark" href="./" aria-label="StompLab home"><img src="wordmark.svg" width="248" height="36" alt="StompLab"></a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary" style="display:flex">
+        <a href="./#pricing">Pricing</a>
+        <a class="btn btn-primary" href="https://stomplab.vercel.app">Open app</a>
       </nav>
     </div>
   </header>
-  <main id="main" class="wrap legal">
-    <p class="kicker">Last updated · 28 August 2026</p>
-    <h1>Privacy</h1>
-    <p>This marketing site is static. It does not run a waitlist, does not have a form, and does not collect email, names, or which HX unit you own. Opening a page here does not create an account.</p>
-    <h2>The live app</h2>
-    <p>The product lives at <a href="https://stomplab.vercel.app">stomplab.vercel.app</a>. Auth is off. Featured songs work with no API key. If you paste a Gemini API key in Settings to research other tracks, that key stays in your browser on the app. It is not sent to this marketing site, and this site has no backend to store it.</p>
-    <h2>What we do not do here</h2>
-    <ul>
-      <li>No mailing list signup on these pages.</li>
-      <li>No “we saved your email” message — because we don’t take one.</li>
-      <li>No sale of visitor data. There isn’t any to sell.</li>
-    </ul>
-    <h2>Hosting</h2>
-    <p>If this site is deployed on Vercel, the host may log standard request data (IP, user agent, URL) for security and operations. That is their infrastructure, not a StompLab profile. See Vercel’s own privacy policy for how they handle logs.</p>
-    <h2>Contact</h2>
-    <p>Questions about the product: use the live app, or reach Liam Boyd, who is still improving StompLab. If a waitlist is ever added, it will only be for product updates, and this page will say so before any email is collected.</p>
-    <p><a href="index.html">Back to StompLab</a></p>
+  <main id="main" class="legal-page">
+    <div class="wrap narrow">
+      <p class="section-kicker">Legal</p>
+      <h1>Privacy</h1>
+      <p class="lede">Short version: we collect what we need to run sign-in, subscriptions, and song research — not a surveillance product. Last updated September 2026.</p>
+      <h2>Who we are</h2>
+      <p>StompLab (Stomp Lab) is a web app by Liam Boyd. Live product: <a href="https://stomplab.vercel.app">stomplab.vercel.app</a>. Questions: <a href="mailto:liamjamesb09@gmail.com">liamjamesb09@gmail.com</a>.</p>
+      <h2>What we collect</h2>
+      <ul>
+        <li><strong>Email sign-in</strong> — your email to authenticate an account. Used for free custom-research quota (3 after sign-in) and subscription status.</li>
+        <li><strong>Subscriptions</strong> — monthly ($6.99) or yearly ($75) plans are processed by <strong>Polar</strong> as merchant of record. Polar handles billing details; we receive entitlement signals so we can open any song, Create, History, and Gear, and apply the 50 custom builds per calendar month.</li>
+        <li><strong>AI song research</strong> — song titles/artists you research are sent through the product’s <strong>AI Gateway</strong> to map tracking/live rigs onto Line&nbsp;6 HX models. You do <em>not</em> provide a Gemini API key.</li>
+        <li><strong>Product usage</strong> — ordinary telemetry to operate the service (demos opened, device selection, errors). We do not sell personal data.</li>
+        <li><strong>Demo path</strong> — Teen Spirit, Sandman, and Comfortably Numb work with no account. If you never sign in, we don’t need your email.</li>
+      </ul>
+      <h2>What we don’t do</h2>
+      <ul>
+        <li>We don’t ask visitors for a Gemini (or other) API key.</li>
+        <li>We don’t fake a waitlist on this static marketing site.</li>
+        <li>We don’t claim Line&nbsp;6 / Yamaha affiliation.</li>
+      </ul>
+      <h2>Third parties</h2>
+      <ul>
+        <li><strong>Hosting</strong> — app and marketing site (commonly Vercel).</li>
+        <li><strong>Auth</strong> — email authentication used by the live app.</li>
+        <li><strong>Polar</strong> — subscription checkout, tax, and MoR handling.</li>
+        <li><strong>AI Gateway / model providers</strong> — process research prompts for rig mappings.</li>
+      </ul>
+      <h2>Retention</h2>
+      <p>Account email and subscription entitlements are kept while your account exists and as needed for billing records. Research inputs may be processed and temporarily logged to operate and improve the product. Contact us for account deletion.</p>
+      <h2>Contact / deletion</h2>
+      <p>Email <a href="mailto:liamjamesb09@gmail.com">liamjamesb09@gmail.com</a>. For receipts, cancellation, or refunds, use Polar’s checkout / customer flow — Polar is the merchant of record.</p>
+      <h2>Changes</h2>
+      <p>If data practices change materially, we’ll update this page. The live app and <a href="https://stomplab.vercel.app/guide">/guide</a> remain the source of truth for how research and plans work.</p>
+      <p style="margin-top:2.5rem"><a class="btn btn-ghost" href="./">← Back to StompLab</a></p>
+    </div>
   </main>
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <p>StompLab · not affiliated with Line 6 or Yamaha Guitar Group.</p>
-      <nav aria-label="Footer">
-        <a href="privacy.html">Privacy</a>
-        <a href="https://stomplab.vercel.app">Live app</a>
+      <div class="footer-brand">
+        <img src="wordmark.svg" width="180" height="26" alt="StompLab">
+        <p>By Liam Boyd.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="https://stomplab.vercel.app">Open app</a>
+        <a href="./">Home</a>
+        <a href="mailto:liamjamesb09@gmail.com">Email Liam</a>
       </nav>
+      <p class="footer-legal">StompLab is not affiliated with Line&nbsp;6 or Yamaha Guitar Group.</p>
     </div>
   </footer>
 </body>
