@@ -1,6 +1,15 @@
 (function () {
+  var header = document.getElementById("site-header");
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
+
+  function onScroll() {
+    if (!header) return;
+    header.classList.toggle("is-scrolled", window.scrollY > 8);
+  }
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
       var open = toggle.getAttribute("aria-expanded") === "true";
@@ -16,6 +25,7 @@
       });
     });
   }
+
   var faqs = document.querySelectorAll(".accordion details");
   faqs.forEach(function (item) {
     item.addEventListener("toggle", function () {
@@ -25,4 +35,23 @@
       });
     });
   });
+
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var nodes = document.querySelectorAll(".reveal");
+  if (reduce || !("IntersectionObserver" in window)) {
+    nodes.forEach(function (el) { el.classList.add("is-in"); });
+    return;
+  }
+  var io = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-in");
+          io.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+  );
+  nodes.forEach(function (el) { io.observe(el); });
 })();

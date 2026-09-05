@@ -2,9 +2,9 @@
 
 Pure static site (HTML / CSS / JS – no npm) for **StompLab** / Stomp Lab by Liam Boyd.
 
-- Live product: https://stomplab.vercel.app
+- Live product: https://stomplab.app
 - Promo site: https://stomplab-promo.vercel.app
-- Guide (authoritative product copy): https://stomplab.vercel.app/guide
+- Guide (authoritative product copy): https://stomplab.app/guide
 
 ## Visitor path
 
@@ -17,13 +17,13 @@ Pure static site (HTML / CSS / JS – no npm) for **StompLab** / Stomp Lab by Li
 | File | Role |
 |------|------|
 | `index.html` | Conversion landing (hero → demos → pricing → FAQ) |
-| `styles.css` | Dark studio theme (Archivo + IBM Plex) |
-| `main.js` | Mobile nav + FAQ accordion |
-| `privacy.html` | Auth, Polar subscriptions, AI Gateway |
-| `favicon.svg` / `wordmark.svg` | SL pedal mark |
+| `styles.css` | Cream editorial (Oswald + Archivo + IBM Plex Mono) |
+| `main.js` | Sticky nav, mobile menu, FAQ, scroll reveal |
+| `privacy.html` | Auth, Polar, Gemini gateway, Amazon affiliate, stomplab1@gmail.com |
+| `favicon.svg` / `wordmark.svg` | White SL mark |
 | `vercel.json` | `cleanUrls` + security headers |
 
-OG image hotlinked from `https://stomplab.vercel.app/og.jpg` (no large local JPGs).
+OG image hotlinked from `https://stomplab.app/og.jpg` (no large local JPGs).
 
 ## Deploy
 
@@ -32,3 +32,7 @@ Point Vercel project **stomplab-promo** at this repo (`Lboyd09/stomplab-site`). 
 ## Honest marketing
 
 No fake testimonials, user counts, press logos, or awards. Demos + clear subscription pricing are the proof.
+
+## Brand
+
+Cream paper `#f3efe6`, cards `#faf7f0`, text `#141414`, muted `#e7e1d4` / `#5c5850`, LCD accent `#7dff9a`. Support: stomplab1@gmail.com. CTAs → https://stomplab.app.
