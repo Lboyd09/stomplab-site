@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 168 36" role="img" aria-label="StompLab">
-  <rect x="0.5" y="3.5" width="29" height="29" rx="6.5" fill="#fffdf8" stroke="#141414" stroke-opacity="0.1"/>
-  <text x="15" y="24" text-anchor="middle" font-family="Oswald, Arial Narrow, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="0.4" fill="#141414">SL</text>
-  <text x="40" y="25" font-family="Archivo, system-ui, sans-serif" font-size="18" font-weight="650" letter-spacing="-0.4" fill="#141414">StompLab</text>
+  <rect x="0.75" y="3.75" width="28.5" height="28.5" rx="6.25" fill="#F3EFE6"/>
+  <rect x="0.75" y="3.75" width="28.5" height="28.5" rx="6.25" fill="none" stroke="#141414" stroke-width="1.5"/>
+  <text x="15" y="24.2" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="900" letter-spacing="-1.4" fill="#141414">SL</text>
+  <text x="40" y="25" font-family="Archivo, system-ui, sans-serif" font-size="18" font-weight="650" letter-spacing="-0.4" fill="#e8e6df">StompLab</text>
 </svg>
