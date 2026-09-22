@@ -1,93 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy — Stomp Lab</title>
-  <meta name="description" content="How Stomp Lab handles email sign-in, Polar subscriptions, and AI song research. Short and honest.">
-  <meta name="theme-color" content="#f3efe6">
-  <meta name="color-scheme" content="light">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="canonical" href="https://stomplab-site.vercel.app/privacy">
-  <meta property="og:title" content="Privacy — Stomp Lab">
-  <meta property="og:description" content="Auth emails, Polar subscriptions, AI research — what Stomp Lab collects and why.">
-  <meta property="og:image" content="https://stomplab.app/og.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://stomplab.app/og.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy — StompLab</title>
+<meta name="description" content="How StompLab handles email sign-in, Polar subscriptions, and AI song research.">
+<meta name="theme-color" content="#f3efe6"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://stomplab-site.vercel.app/privacy">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,400..800&family=IBM+Plex+Mono:wght@400;500&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header" id="site-header">
-    <div class="wrap header-inner">
-      <a class="wordmark" href="./" aria-label="Stomp Lab home"><img src="wordmark.svg" width="248" height="36" alt="Stomp Lab"></a>
-      <nav class="site-nav" id="site-nav" aria-label="Primary" style="display:flex">
-        <a href="./#pricing">Pricing</a>
-        <a class="btn btn-primary" href="https://stomplab.app">Open app</a>
-      </nav>
-    </div>
-  </header>
-  <main id="main" class="legal-page">
-    <div class="wrap narrow">
-      <p class="section-kicker">Legal</p>
-      <h1>Privacy</h1>
-      <p class="lede">Short version: we collect what we need to run sign-in, subscriptions, and song research — not a surveillance product. Last updated September 2026.</p>
-
-      <h2>Who we are</h2>
-      <p>Stomp Lab (StompLab) is a web app for researching song rigs onto Line&nbsp;6 units. Live product: <a href="https://stomplab.app">stomplab.app</a>. Support: <a href="mailto:stomplab1@gmail.com">stomplab1@gmail.com</a>.</p>
-
-      <h2>What we collect</h2>
-      <ul>
-        <li><strong>Email sign-in (auth)</strong> — your email to authenticate an account. Used for free custom-research quota (3 after sign-in) and subscription status.</li>
-        <li><strong>Subscriptions (Polar)</strong> — monthly ($6.99) or yearly ($75) plans are processed by <strong>Polar</strong> as merchant of record. Polar handles billing details; we receive entitlement signals so we can open any song, Create, History, and Gear locker, and apply the 50 custom builds per calendar month. Manage or cancel via <strong>Account → Manage subscription</strong> in the app.</li>
-        <li><strong>AI song research (Gemini via product gateway)</strong> — song titles/artists you research are sent through the product’s <strong>AI gateway</strong> to map tracking/live rigs onto Line&nbsp;6 models. You do <em>not</em> provide a Gemini API key.</li>
-        <li><strong>Product usage</strong> — ordinary telemetry to operate the service (demos opened, device selection, errors). We do not sell personal data.</li>
-        <li><strong>Demo path</strong> — Teen Spirit, Sandman, and Comfortably Numb work with no account. If you never sign in, we don’t need your email.</li>
-      </ul>
-
-      <h2>What we don’t do</h2>
-      <ul>
-        <li>We don’t ask visitors for a Gemini (or other) API key.</li>
-        <li>We don’t invent fake testimonials, user counts, or press logos on this marketing site.</li>
-        <li>We don’t claim Line&nbsp;6 / Yamaha affiliation.</li>
-      </ul>
-
-      <h2>Third parties</h2>
-      <ul>
-        <li><strong>Hosting</strong> — app and marketing site (commonly Vercel).</li>
-        <li><strong>Auth</strong> — email authentication used by the live app at stomplab.app.</li>
-        <li><strong>Polar</strong> — subscription checkout, tax, and MoR handling.</li>
-        <li><strong>AI gateway / model providers</strong> — process research prompts for rig mappings (including Google Gemini behind the gateway).</li>
-      </ul>
-
-      <h2>Retention</h2>
-      <p>Account email and subscription entitlements are kept while your account exists and as needed for billing records. Research inputs may be processed and temporarily logged to operate and improve the product. Contact us for account deletion.</p>
-
-      <h2>Contact / deletion</h2>
-      <p>Email <a href="mailto:stomplab1@gmail.com">stomplab1@gmail.com</a>. For receipts, cancellation, or refunds, use <strong>Account → Manage subscription</strong> / Polar’s customer flow — Polar is the merchant of record.</p>
-
-      <h2>Changes</h2>
-      <p>If data practices change materially, we’ll update this page. The live app at <a href="https://stomplab.app">stomplab.app</a> and <a href="https://stomplab.app/guide">/guide</a> remain the source of truth for how research and plans work.</p>
-      <p style="margin-top:2.5rem"><a class="btn btn-ghost" href="./">← Back to Stomp Lab</a></p>
-    </div>
-  </main>
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <div class="footer-brand">
-        <img src="wordmark.svg" width="180" height="26" alt="Stomp Lab">
-        <p>Research any song → HX preset for your unit.</p>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <a href="https://stomplab.app">Open app</a>
-        <a href="./">Home</a>
-        <a href="mailto:stomplab1@gmail.com">Support</a>
-      </nav>
-      <p class="footer-legal">Stomp Lab is not affiliated with Line&nbsp;6 or Yamaha Guitar Group. Unofficial research tool.</p>
-    </div>
-  </footer>
-  <script src="main.js" defer></script>
-</body>
-</html>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header is-scrolled" id="site-header"><div class="nav-shell">
+<a class="brand" href="./" aria-label="StompLab home"><span class="sl-sticker" aria-hidden="true">SL</span><span class="brand-name">StompLab</span></a>
+<nav class="site-nav" id="site-nav" aria-label="Primary navigation" style="display:flex"><a href="./#pricing">Pricing</a><a class="button button-small button-primary" href="https://stomplab.app">Try StompLab free <span aria-hidden="true">↗</span></a></nav>
+</div></header>
+<main id="main" class="legal-page"><div class="wrap">
+<p class="kicker">Legal</p>
+<h1>Privacy</h1>
+<p class="lede">We collect what we need to run sign-in, subscriptions, and song research — not a surveillance product. Last updated September 2026.</p>
+<h2>Who we are</h2>
+<p>StompLab is a web app for researching song rigs onto Line&nbsp;6 units. Live product: <a href="https://stomplab.app">stomplab.app</a>. Support: <a href="mailto:stomplab1@gmail.com">stomplab1@gmail.com</a>.</p>
+<h2>What we collect</h2>
+<ul>
+<li><strong>Email sign-in</strong> — your email to authenticate an account, free custom-research quota, and subscription status.</li>
+<li><strong>Subscriptions (Polar)</strong> — monthly ($6.99) or yearly ($75) plans processed by Polar as merchant of record. Manage or cancel via Account → Manage subscription.</li>
+<li><strong>AI song research</strong> — song titles and artists you research are processed through the product AI gateway. You do not provide a Gemini API key.</li>
+<li><strong>Product usage</strong> — ordinary telemetry to operate the service. We do not sell personal data.</li>
+<li><strong>Demo path</strong> — Teen Spirit, Sandman, and Comfortably Numb work with no account.</li>
+</ul>
+<h2>What we don’t do</h2>
+<ul>
+<li>We don’t ask visitors for a Gemini (or other) API key.</li>
+<li>We don’t invent fake testimonials, user counts, or press logos on this marketing site.</li>
+<li>We don’t claim Line&nbsp;6 / Yamaha affiliation.</li>
+</ul>
+<h2>Third parties</h2>
+<ul>
+<li><strong>Hosting</strong> — app and marketing site (commonly Vercel).</li>
+<li><strong>Auth</strong> — email authentication used by the live app.</li>
+<li><strong>Polar</strong> — subscription checkout, tax, and MoR handling.</li>
+<li><strong>AI gateway / model providers</strong> — process research prompts for rig mappings.</li>
+</ul>
+<h2>Retention</h2>
+<p>Account email and subscription entitlements are kept while your account exists and as needed for billing records. Contact us for account deletion.</p>
+<h2>Contact</h2>
+<p>Email <a href="mailto:stomplab1@gmail.com">stomplab1@gmail.com</a>. For receipts, cancellation, or refunds, use Account → Manage subscription / Polar’s customer flow.</p>
+<p style="margin-top:3rem"><a class="button button-outline" href="./">← Back to StompLab</a></p>
+</div></main>
+<footer class="site-footer"><div class="wrap footer-main"><div class="footer-brand"><a class="brand" href="./"><span class="sl-sticker">SL</span><span class="brand-name">StompLab</span></a><p>Type a song. Get that guitar rig.</p></div><nav aria-label="Links"><p>Links</p><a href="https://stomplab.app">Open app ↗</a><a href="./">Home</a><a href="mailto:stomplab1@gmail.com">Support</a></nav></div><div class="wrap footer-bottom"><p>© 2026 StompLab. Research-based presets are starting points, not 100% copies.</p><p>Not affiliated with Line 6 or Yamaha Guitar Group.</p></div></footer>
+<script src="main.js" defer></script>
+</body></html>

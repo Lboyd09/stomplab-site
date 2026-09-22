@@ -1,408 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>StompLab — Research any song. Get an HX preset that sounds like the record.</title>
-  <meta name="description" content="Research any song. Type a title, get a preset for your Line 6 unit (.hlx / .pgp). Three free demos, no account. Built for HX Stomp &amp; Stomp XL.">
-  <meta name="theme-color" content="#f3efe6">
-  <meta name="color-scheme" content="light">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="canonical" href="https://stomplab-site.vercel.app/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="StompLab">
-  <meta property="og:title" content="StompLab — Research any song. Get an HX preset that sounds like the record.">
-  <meta property="og:description" content="Type a title → preset for your unit (.hlx / .pgp). Three free demos always downloadable. Research any song on stomplab.app.">
-  <meta property="og:image" content="https://stomplab.app/og.jpg">
-  <meta property="og:image:alt" content="StompLab product view with a song mapped onto an HX Stomp layout">
-  <meta property="og:url" content="https://stomplab-site.vercel.app/">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="StompLab — Research any song. Get an HX preset that sounds like the record.">
-  <meta name="twitter:description" content="3 free demos · no account · .hlx / .pgp · Snapshot-ready.">
-  <meta name="twitter:image" content="https://stomplab.app/og.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "StompLab",
-    "alternateName": "Stomp Lab",
-    "applicationCategory": "MultimediaApplication",
-    "operatingSystem": "Web",
-    "url": "https://stomplab.app",
-    "image": "https://stomplab.app/og.jpg",
-    "description": "Research any song. Type a title, get a Line 6 preset for your unit — .hlx for HX Edit or .pgp for POD Go. Three free demos with no account.",
-    "author": { "@type": "Organization", "name": "Stomp Lab" },
-    "offers": [
-      {
-        "@type": "Offer",
-        "name": "StompLab Monthly",
-        "price": "6.99",
-        "priceCurrency": "USD",
-        "description": "Subscribe monthly via Polar. Opens any song, Create, History, Gear locker. 50 custom builds per calendar month; demos never count."
-      },
-      {
-        "@type": "Offer",
-        "name": "StompLab Yearly",
-        "price": "75",
-        "priceCurrency": "USD",
-        "description": "Subscribe yearly (~$8.88 saved vs monthly). Same access: any song, Create, History, Gear, 50 custom builds per month."
-      }
-    ]
-  }
-  </script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>StompLab — Type a song. Get that guitar rig.</title>
+<meta name="description" content="Research the recorded guitar or bass rig behind any song, then get a downloadable preset for your Line 6 unit. Three free demos, no account required.">
+<meta name="theme-color" content="#f3efe6"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://stomplab-site.vercel.app/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="StompLab"><meta property="og:title" content="Type a song. Get that guitar rig."><meta property="og:description" content="Research the record. Download a Line 6 preset. Three free demos, no account required."><meta property="og:url" content="https://stomplab-site.vercel.app/">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="StompLab — Type a song. Get that guitar rig."><meta name="twitter:description" content="Research the record. Download a Line 6 preset. Three free demos.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,400..800&family=IBM+Plex+Mono:wght@400;500&family=Oswald:wght@500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"StompLab","applicationCategory":"MultimediaApplication","operatingSystem":"Web","url":"https://stomplab.app","description":"Research a recorded guitar or bass rig and build a downloadable preset for a supported Line 6 unit.","offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Monthly","price":"6.99","priceCurrency":"USD"},{"@type":"Offer","name":"Yearly","price":"75","priceCurrency":"USD"}]}</script>
 </head>
 <body id="top">
-  <a class="skip" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"><div class="nav-shell">
+<a class="brand" href="#top" aria-label="StompLab home"><span class="sl-sticker" aria-hidden="true">SL</span><span class="brand-name">StompLab</span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+<nav class="site-nav" id="site-nav" aria-label="Primary navigation"><a href="#how">How it works</a><a href="#features">Features</a><a href="#demos">Demos</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a class="button button-small button-primary" href="https://stomplab.app">Try StompLab free <span aria-hidden="true">↗</span></a></nav>
+</div></header>
+<main id="main">
+<section class="hero sl-hero-wash" aria-labelledby="hero-title"><div class="hero-orb orb-one" aria-hidden="true"></div><div class="hero-orb orb-two" aria-hidden="true"></div><div class="wrap hero-inner">
+<p class="kicker reveal">For Line 6</p><h1 id="hero-title" class="reveal">Type a song.<br><span>Get that guitar rig.</span></h1>
+<p class="hero-lede reveal">StompLab researches the guitar or bass sound on the record, translates the signal chain to your unit, and gives you a preset you can actually import.</p>
+<div class="hero-actions reveal"><a class="button button-primary button-large" href="https://stomplab.app">Try StompLab free <span aria-hidden="true">↗</span></a><a class="text-action" href="#demos">See the free demos <span aria-hidden="true">↓</span></a></div>
+<p class="microtrust reveal"><span class="status-dot"></span> Three demos. No account. Real <code>.hlx</code> and <code>.pgp</code> downloads.</p>
+<div class="hero-product reveal" aria-label="StompLab preset preview"><div class="app-bar"><div class="app-brand"><span class="mini-sticker">SL</span><span>StompLab</span></div><div class="app-context"><span>HX Stomp</span><span class="app-live">Ready</span></div></div>
+<div class="product-workspace"><div class="song-panel"><p class="ui-label">Now researching</p><h2>Smells Like Teen Spirit</h2><p class="artist">Nirvana · Nevermind · 1991</p><div class="signal-chain" aria-label="Signal chain"><span>Noise gate</span><i>→</i><span>Distortion</span><i>→</i><span>Amp</span><i>→</i><span>4×12 cab</span><i>→</i><span>Chorus</span></div><div class="confidence-row"><span>Research starting point</span><strong>Mapped to factory models</strong></div></div>
+<div class="stomp-device" aria-hidden="true"><div class="device-topline"><span>HX STOMP</span><span>STOMPLAB / 001</span></div><div class="lcd-screen"><div class="lcd-head"><span>SNAPSHOT</span><span>GUITAR</span></div><strong>CHORUS</strong><div class="lcd-chain"><span>808</span><span>BRIT 2204</span><span>4×12</span><span>70s CHORUS</span></div></div><div class="footswitch-row"><div><b></b><span>FS1</span><em>Intro</em></div><div class="active"><b></b><span>FS2</span><em>Chorus</em></div><div><b></b><span>FS3</span><em>Solo</em></div></div></div></div>
+<div class="product-footer"><span>Factory-safe model names</span><span>Snapshot-ready</span><span>Download .hlx</span></div></div>
+</div></section>
+<section class="fact-strip" aria-label="Product facts"><div class="wrap facts reveal"><div><strong>3</strong><span>free demos forever</span></div><div><strong>3</strong><span>free custom builds after sign-in</span></div><div><strong>2,100+</strong><span>common models in Gear locker</span></div><div><strong>50</strong><span>custom builds each paid month</span></div></div></section>
 
-  <header class="site-header" id="site-header">
-    <div class="wrap header-inner">
-      <a class="wordmark" href="#top" aria-label="Stomp Lab home">
-        <img src="wordmark.svg" width="248" height="36" alt="Stomp Lab">
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-        <span aria-hidden="true"></span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <a href="#how">How it works</a>
-        <a href="#features">Features</a>
-        <a href="#demos">Demos</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn btn-primary" href="https://stomplab.app">Try a free demo</a>
-      </nav>
-    </div>
-  </header>
+<section class="chain-story" id="how" aria-labelledby="how-title"><div class="chain-sticky"><div class="wrap chain-layout">
+<div class="chain-copy"><p class="kicker">How it works</p><h2 id="how-title">From the record<br>to your pedalboard.</h2><div class="chain-steps">
+<article class="chain-step is-active" data-step="0"><span>01</span><h3>Type any song</h3><p>Choose guitar or bass, the track, and your Line 6 unit.</p></article>
+<article class="chain-step" data-step="1"><span>02</span><h3>Research the rig</h3><p>StompLab maps amps, cabs, effects, order, and settings to factory models.</p></article>
+<article class="chain-step" data-step="2"><span>03</span><h3>Shape the song</h3><p>Sections become snapshots while individual effects stay underfoot.</p></article>
+<article class="chain-step" data-step="3"><span>04</span><h3>Import and play</h3><p>Download <code>.hlx</code> or <code>.pgp</code> and open it in your editor.</p></article>
+</div></div>
+<div class="chain-frame" aria-label="Signal chain transformation"><div class="chain-screen"><div class="chain-screen-top"><span id="chain-label">INPUT</span><span>HX STOMP</span></div><strong id="chain-title">Your song</strong><p id="chain-subtitle">Name the sound you want to chase.</p><div class="chain-blocks"><span class="active">IN</span><span>OD</span><span>AMP</span><span>CAB</span><span>FX</span><span>OUT</span></div></div><div class="chain-progress"><i></i></div></div>
+</div></div></section>
 
-  <main id="main">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy reveal">
-          <p class="announcement"><span class="led" aria-hidden="true"></span> Free demos · Helix-ready</p>
-          <h1>Research any song. Get an HX preset that sounds like the record.</h1>
-          <p class="lede">Type a title — Stomp Lab maps the tracking or live guitar/bass rig onto your Line&nbsp;6 unit and hands you a downloadable preset for that unit: <code>.hlx</code> for HX Edit, <code>.pgp</code> for POD&nbsp;Go Edit.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary btn-lg" href="https://stomplab.app">Try a free demo</a>
-            <a class="btn btn-ghost btn-lg" href="#pricing">See pricing</a>
-          </div>
-          <p class="hero-fine">No account for demos. AI runs through the product gateway — you never paste a Gemini key.</p>
-        </div>
+<section class="features-section" id="features" aria-labelledby="features-title"><div class="wide-wrap"><div class="section-intro reveal"><p class="kicker">Inside StompLab</p><h2 id="features-title">Everything between the idea and the footswitch.</h2></div>
+<div class="bento-grid">
+<article class="bento-card bento-stage reveal"><div class="bento-copy"><p class="card-kicker">Preset builder</p><h3>A whole song, not one frozen tone.</h3><p>Song sections become snapshots. Stomp mode keeps individual effects underfoot. FS1 is top-left, matching the unit and HX Edit.</p></div><div class="mini-chassis" aria-hidden="true"><div class="mini-lcd"><small>PRESET 001</small><strong>VERSE CLEAN</strong><span>Comp · Amp · Cab · Chorus</span></div><div class="mini-switches"><i></i><i class="lit"></i><i></i></div></div></article>
+<article class="bento-card bento-units reveal"><p class="card-kicker">Your unit</p><h3>The right file for the right box.</h3><div class="unit-list"><span><b>HX Stomp + XL</b><em>battle-tested .hlx</em></span><span><b>Helix Floor + LT</b><em>selectable .hlx</em></span><span><b>HX Effects</b><em>no amp / cab</em></span><span><b>POD Go</b><em>real .pgp</em></span></div></article>
+<article class="bento-card bento-gear reveal"><div class="gear-orbit" aria-hidden="true"><span>AMP</span><span>OD</span><span>CAB</span><span>DLY</span><b>2,100+</b></div><div><p class="card-kicker">Gear locker</p><h3>Start with what you own.</h3><p>Save guitars and amps. Browse 2,100+ common models in Catalog or use Find equivalent to translate familiar gear into Line 6 language.</p></div></article>
+<article class="bento-card bento-simple reveal"><div class="icon-box" aria-hidden="true">↺</div><p class="card-kicker">History</p><h3>Your builds stay findable.</h3><p>Return to past research and downloads instead of rebuilding the same rig from memory.</p></article>
+<article class="bento-card bento-simple reveal"><div class="icon-box icon-gateway" aria-hidden="true">◎</div><p class="card-kicker">Product AI gateway</p><h3>No Gemini key from you.</h3><p>Research runs through StompLab. You never paste a visitor API key into the app.</p></article>
+<article class="bento-card bento-wide reveal"><div><p class="card-kicker">Straightforward billing</p><h3>Create for subscribers. Cancel in Account.</h3><p>Paid plans unlock Create, History, Gear locker, and 50 custom builds each month. Polar handles checkout; manage or cancel from Account.</p></div><a class="text-link" href="https://stomplab.app/upgrade">See plans <span aria-hidden="true">↗</span></a></article>
+</div></div></section>
 
-        <aside class="hero-mock reveal" aria-label="Product workflow preview">
-          <div class="mock-chrome">
-            <span class="mock-dot live" aria-hidden="true"></span>
-            <span class="mock-dot" aria-hidden="true"></span>
-            <span class="mock-dot" aria-hidden="true"></span>
-            <span class="mock-title">Stomp Lab · live app</span>
-          </div>
-          <div class="mock-body">
-            <div class="mock-row">
-              <strong>Smells Like Teen Spirit</strong>
-              <span>Free demo</span>
-            </div>
-            <div class="mock-lcd" aria-hidden="true">
-              <div>INTRO → VERSE → CHORUS</div>
-              <div class="dim">FS1 · FS2 · FS3 · Snapshot mode</div>
-              <div class="dim">Export · factory-safe HX strings</div>
-            </div>
-            <div class="mock-fs" aria-hidden="true">
-              <div class="on">FS1 Intro</div>
-              <div>FS2 Verse</div>
-              <div>FS3 Chorus</div>
-            </div>
-          </div>
-          <div class="mock-caption">
-            <span class="pill pill-ink">3 free demos</span>
-            <span>Always downloadable · no account</span>
-          </div>
-        </aside>
-      </div>
-    </section>
+<section class="demos-section" id="demos" aria-labelledby="demos-title"><div class="wide-wrap"><div class="section-intro section-intro-row reveal"><div><p class="kicker">No-account demos</p><h2 id="demos-title">Three records.<br>Three ways in.</h2></div><p>Open the real experience, inspect the rig, and download the preset. Demos are always free and never count against a paid build limit.</p></div><div class="demo-gallery">
+<a class="demo-tile demo-blue reveal" href="https://stomplab.app"><span class="track-number">01</span><div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div><p>Nirvana</p><h3>Smells Like<br>Teen Spirit</h3><span class="open-demo">Open free demo ↗</span></div></a>
+<a class="demo-tile demo-ink reveal" href="https://stomplab.app"><span class="track-number">02</span><div class="sandman-art" aria-hidden="true"><span></span><span></span><span></span></div><div><p>Metallica</p><h3>Enter<br>Sandman</h3><span class="open-demo">Open free demo ↗</span></div></a>
+<a class="demo-tile demo-cyan reveal" href="https://stomplab.app"><span class="track-number">03</span><div class="rings" aria-hidden="true"><i></i><i></i><i></i></div><div><p>Pink Floyd</p><h3>Comfortably<br>Numb</h3><span class="open-demo">Open free demo ↗</span></div></a>
+</div></div></section>
 
-    <!-- PROOF STRIP -->
-    <section class="trust" aria-label="What you get">
-      <div class="wrap">
-        <ul class="trust-strip reveal">
-          <li><strong>3 free demos</strong> · no account</li>
-          <li><code>.hlx</code> / <code>.pgp</code> exports</li>
-          <li>Snapshot-ready (FS1 top-left)</li>
-          <li>HX Stomp · XL · Helix · POD Go</li>
-        </ul>
-      </div>
-    </section>
+<section class="cinema-stage" aria-labelledby="stage-title"><div class="stage-glow" aria-hidden="true"></div><div class="wrap stage-inner"><div class="stage-copy reveal"><p class="kicker kicker-light">On the floor</p><h2 id="stage-title">A research result<br>you can step on.</h2><p>Not a paragraph of gear trivia. A playable starting point, laid out for the song and exported for your unit.</p><a class="button button-light button-large" href="https://stomplab.app">Try StompLab free <span aria-hidden="true">↗</span></a></div>
+<div class="floor-device reveal" aria-label="Cinematic pedalboard preview"><div class="floor-brand"><span>STOMPLAB</span><span>HX / SONG RIG</span></div><div class="floor-screen"><div class="screen-meta"><span>SNAP 2 / 3</span><span>HX STOMP XL</span></div><strong>BIG CHORUS</strong><div class="screen-blocks"><span>RAT</span><span>BRIT</span><span>4×12</span><span>CHORUS</span><span>ROOM</span></div></div><div class="floor-knobs"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="floor-switches"><span><i></i><b>INTRO</b></span><span class="on"><i></i><b>CHORUS</b></span><span><i></i><b>SOLO</b></span></div></div>
+<p class="stage-note reveal">Research gives you a credible starting point, not a guaranteed 100% copy. Your guitar, pickups, playback system, and hands still matter.</p></div></section>
 
-    <!-- HOW IT WORKS -->
-    <section class="how" id="how" aria-labelledby="how-title">
-      <div class="wrap">
-        <p class="section-kicker">How it works</p>
-        <h2 id="how-title" class="reveal">Research a song → play the replica → import the file.</h2>
-        <ol class="steps">
-          <li class="step reveal">
-            <span class="step-num" aria-hidden="true">01</span>
-            <h3>Research any song</h3>
-            <p>Open a free demo, or type a title and build a custom preset. The product AI gateway maps the tracking/live rig onto factory HX model strings — no visitor API key.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step-num" aria-hidden="true">02</span>
-            <h3>Play the replica</h3>
-            <p>The screen is the unit. Tap song sections and switches. Guitar or Bass mode. Nudge for FRFR, amp, headphones, monitors, or PA.</p>
-          </li>
-          <li class="step reveal">
-            <span class="step-num" aria-hidden="true">03</span>
-            <h3>Import the file</h3>
-            <p>Download <code>.hlx</code> or <code>.pgp</code>. In HX Edit: <strong>File → Import</strong>, then PAGE to SNAP/STOMP. Snapshots = song sections; Stomp = effects on/off.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
+<section class="pricing-section" id="pricing" aria-labelledby="pricing-title"><div class="wrap"><div class="section-intro centered reveal"><p class="kicker">Simple pricing</p><h2 id="pricing-title">Find your sound.<br>Then keep going.</h2><p>Start without a card. Upgrade only when you want to research more songs.</p></div>
+<div class="pricing-shell"><article class="free-summary reveal"><p class="plan-name">Free</p><p class="price"><strong>$0</strong></p><h3>Try it on your board.</h3><ul><li>3 demos forever, no account</li><li>3 custom builds after sign-in</li><li>Real preset downloads</li></ul><a class="button button-outline button-block" href="https://stomplab.app">Try StompLab free <span>↗</span></a></article>
+<article class="pro-card reveal"><div class="pro-heading"><div><span class="best-value">Recommended</span><p class="plan-name">StompLab Pro</p><h3>Every song is on the table.</h3></div><div class="billing-toggle" role="group" aria-label="Billing period"><button class="is-active" data-price="monthly" type="button">Monthly</button><button data-price="yearly" type="button">Yearly</button></div></div>
+<div class="pro-body"><div class="pro-price"><p class="price"><strong id="price-value">$6.99</strong><span id="price-period">/ month</span></p><p id="price-note">Flexible monthly billing</p></div><ul><li><strong>50 custom builds</strong> each month</li><li>Create, History, and Gear locker</li><li>Demos never count toward the 50</li><li>Manage or cancel in Account</li></ul></div><a class="button button-primary button-block" href="https://stomplab.app/upgrade">Get StompLab Pro <span>↗</span></a><p class="annual-note">Yearly is $75 — about $8.88 saved versus monthly.</p></article></div>
+<p class="pricing-note reveal">Paid members can invite friends: a paid invite may give the friend 50% off one monthly invoice; free invites can add builds. Exact eligibility appears in the app. Billing is handled by Polar.</p></div></section>
 
-    <!-- FEATURE BENTO -->
-    <section class="features" id="features" aria-labelledby="features-title">
-      <div class="wrap">
-        <p class="section-kicker">What’s new</p>
-        <h2 id="features-title" class="reveal">Built for the board — not a dark-studio tease.</h2>
-        <div class="bento">
-          <article class="bento-card bento-lg reveal">
-            <p class="meta">Units &amp; exports</p>
-            <h3>Every Line 6 path, labeled honestly</h3>
-            <p>HX Stomp &amp; XL are battle-tested <code>.hlx</code>. Helix Floor, Helix LT, and HX Effects (no amp/cab) are selectable. POD Go exports real <code>.pgp</code> for POD Go Edit — never a fake <code>.hlx</code>.</p>
-            <p>Factory-only model strings HX Edit accepts. Replica FS numbers match HX Edit silkscreen (FS1 top-left).</p>
-          </article>
-          <article class="bento-card bento-sm bento-chassis reveal">
-            <p class="meta">HX chassis</p>
-            <h3>LCD-ready snaps</h3>
-            <p>Snapshots map verse / chorus / solo. Stomp mode toggles effects.</p>
-            <div class="chassis-lcd">SNAP 1 · INTRO<br>SNAP 2 · VERSE<br>SNAP 3 · CHORUS</div>
-          </article>
-          <article class="bento-card bento-sm reveal">
-            <p class="meta">Gear locker</p>
-            <h3>Catalog + Find equivalent</h3>
-            <p>Map a real pedal to the Line&nbsp;6 name. Keep guitars and amps in Gear locker so research can pull from what you own.</p>
-          </article>
-          <article class="bento-card bento-md reveal">
-            <p class="meta">Polar billing</p>
-            <h3>Cancel anytime in Account</h3>
-            <p>Manage or cancel via <strong>Account → Manage subscription</strong>. Polar is merchant of record — no invented refund theater.</p>
-          </article>
-          <article class="bento-card bento-md reveal">
-            <p class="meta">AI gateway</p>
-            <h3>No visitor Gemini key</h3>
-            <p>Research runs through the product. Soft disclaimer baked in: starting points, not 100% copies.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+<section class="faq-section" id="faq" aria-labelledby="faq-title"><div class="wrap faq-layout"><div class="faq-heading reveal"><p class="kicker">Good questions</p><h2 id="faq-title">Before you plug in.</h2><p>Still wondering? <a href="mailto:stomplab1@gmail.com">Email support</a>.</p></div><div class="faq-list reveal">
+<details><summary>Does StompLab make an exact copy of the record?<span></span></summary><p>No. It creates research-based starting points, not guaranteed 100% copies. Your guitar, pickups, monitoring, room, and playing all change the result. Treat the preset as a strong first draft and adjust it on your rig.</p></details>
+<details><summary>Which Line 6 units are supported?<span></span></summary><p>HX Stomp and HX Stomp XL are battle-tested with <code>.hlx</code> files. Helix Floor, Helix LT, and HX Effects are selectable. HX Effects omits amp and cab blocks. POD Go exports a real <code>.pgp</code> file.</p></details>
+<details><summary>What can I try without an account?<span></span></summary><p>Smells Like Teen Spirit, Enter Sandman, and Comfortably Numb are always free. Open and download them without an account. Sign in for three free custom builds.</p></details>
+<details><summary>What does the subscription unlock?<span></span></summary><p>Subscribers can research any song and use Create, History, and Gear locker. Both paid plans include 50 custom builds each month. Demo presets never count toward that limit.</p></details>
+<details><summary>Do I need my own Gemini API key?<span></span></summary><p>No. Research runs through the StompLab product gateway. Visitors are never asked to paste in a Gemini key.</p></details>
+<details><summary>How do I import a preset?<span></span></summary><p>Download the file and import it in HX Edit or POD Go Edit. For HX hardware, use Snapshot mode for song sections or Stomp mode for effect bypass controls.</p></details>
+<details><summary>Can I cancel the subscription?<span></span></summary><p>Yes. Open Account in StompLab and choose Manage subscription. Polar is the merchant of record and handles checkout and billing management.</p></details>
+<details><summary>Is StompLab affiliated with Line 6 or Yamaha?<span></span></summary><p>No. StompLab is independent and is not affiliated with, endorsed by, or sponsored by Line 6 or Yamaha Guitar Group.</p></details>
+</div></div></section>
 
-    <!-- DEMO GALLERY -->
-    <section class="demos" id="demos" aria-labelledby="demos-title">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="section-kicker">Live proof</p>
-            <h2 id="demos-title" class="reveal">Three demos. Always free. Always downloadable.</h2>
-          </div>
-          <p class="section-aside">No fake audio players here — open the real preset in the app.</p>
-        </div>
-        <div class="demo-grid">
-          <article class="demo-card reveal">
-            <div class="demo-meta">
-              <span class="demo-artist">Nirvana</span>
-              <span class="pill pill-led">Free demo</span>
-            </div>
-            <h3>Smells Like Teen Spirit</h3>
-            <p>Chorus wall, gain staging, cab, and section snaps on a compact Stomp — a clean test of the whole pipeline.</p>
-            <a class="btn btn-primary" href="https://stomplab.app/preset/featured-teen-spirit">Open free demo</a>
-          </article>
-          <article class="demo-card reveal">
-            <div class="demo-meta">
-              <span class="demo-artist">Metallica</span>
-              <span class="pill pill-led">Free demo</span>
-            </div>
-            <h3>Enter Sandman</h3>
-            <p>Black Album energy on FS1–FS3 — intro arpeggio, slammed rhythm, lead lift. The whole song on snapshots.</p>
-            <a class="btn btn-primary" href="https://stomplab.app/preset/featured-sandman">Open free demo</a>
-          </article>
-          <article class="demo-card reveal">
-            <div class="demo-meta">
-              <span class="demo-artist">Pink Floyd</span>
-              <span class="pill pill-led">Free demo</span>
-            </div>
-            <h3>Comfortably Numb</h3>
-            <p>Clean verses into those solos — delay, sustain, and section changes that reward Snapshot mode.</p>
-            <a class="btn btn-primary" href="https://stomplab.app/preset/featured-numb">Open free demo</a>
-          </article>
-        </div>
-        <p class="demo-note">Sign in for 3 free custom researches. Subscription opens any song, Create, History, and Gear locker sync — demos never count toward the monthly build cap.</p>
-      </div>
-    </section>
-
-    <!-- HARDWARE -->
-    <section class="hardware" id="hardware" aria-labelledby="hardware-title">
-      <div class="wrap hardware-grid">
-        <div class="reveal">
-          <p class="section-kicker">Built for the board</p>
-          <h2 id="hardware-title">HX Stomp &amp; XL first. POD Go gets real .pgp.</h2>
-          <p>Battle-tested on HX Stomp and HX Stomp XL. Helix Floor, Helix LT, and HX Effects are selectable in-app. POD Go exports <code>.pgp</code> for POD Go Edit — not a fake Helix file.</p>
-          <ul class="check-list">
-            <li>Guitar + Bass modes</li>
-            <li>Playback nudge: FRFR / amp / headphones / monitors / PA</li>
-            <li>Gear locker sync · Catalog · Find equivalent</li>
-            <li>Soft disclaimer: research starting points — tweak on the unit</li>
-          </ul>
-        </div>
-        <aside class="device-panel reveal" aria-label="Devices selectable in the app">
-          <p class="device-label">Selectable in-app</p>
-          <ul class="device-list">
-            <li class="core">HX Stomp <span>.hlx</span></li>
-            <li class="core">HX Stomp XL <span>.hlx</span></li>
-            <li>Helix Floor <span>.hlx</span></li>
-            <li>Helix LT <span>.hlx</span></li>
-            <li>HX Effects <span>no amp/cab</span></li>
-            <li>POD Go <span>.pgp</span></li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section class="pricing" id="pricing" aria-labelledby="pricing-title">
-      <div class="wrap">
-        <p class="section-kicker">Offer</p>
-        <h2 id="pricing-title" class="reveal">Start free. Subscribe when you want every song.</h2>
-        <p class="price-intro">Three demos never need an account. Sign in for three free custom songs. After that, subscribe monthly or yearly — checkout in the app via Polar.</p>
-        <div class="price-grid price-grid-3">
-          <article class="price-card reveal">
-            <h3>Free</h3>
-            <p class="price-amount"><span class="num">$0</span></p>
-            <p class="price-sub">No card for demos</p>
-            <ul>
-              <li><strong>3 demos forever</strong> — Teen Spirit, Sandman, Comfortably Numb</li>
-              <li>Always downloadable · no account</li>
-              <li>Sign in → <strong>3 free custom</strong> researches</li>
-            </ul>
-            <a class="btn btn-ghost btn-block" href="https://stomplab.app">Try free demos</a>
-          </article>
-          <article class="price-card reveal">
-            <h3>Monthly</h3>
-            <p class="price-amount">
-              <span class="num">$6.99</span>
-              <span class="was">/ month</span>
-            </p>
-            <p class="price-sub">Polar checkout in the app</p>
-            <ul>
-              <li>Opens <strong>any song</strong>, Create, History, Gear locker</li>
-              <li><strong>50 custom builds</strong> / calendar month</li>
-              <li>Demos never count toward the 50</li>
-              <li>Cancel anytime: Account → Manage subscription</li>
-            </ul>
-            <a class="btn btn-ghost btn-block" href="https://stomplab.app/upgrade">Subscribe monthly</a>
-          </article>
-          <article class="price-card price-card-featured reveal">
-            <p class="price-badge">Best value</p>
-            <h3>Yearly</h3>
-            <p class="price-amount">
-              <span class="num">$75</span>
-              <span class="was">/ year</span>
-            </p>
-            <p class="price-sub">Save $8.88 vs paying monthly</p>
-            <ul>
-              <li>Same access: any song, Create, History, Gear</li>
-              <li><strong>50 custom builds</strong> every calendar month</li>
-              <li>Demos never count toward the 50</li>
-              <li>One Polar checkout for the year</li>
-            </ul>
-            <a class="btn btn-primary btn-block" href="https://stomplab.app/upgrade">Subscribe yearly</a>
-          </article>
-        </div>
-        <p class="price-fine">Payments by Polar (merchant of record). Manage or cancel in the app under Account → Manage subscription. No fake urgency timers.</p>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq" id="faq" aria-labelledby="faq-title">
-      <div class="wrap narrow">
-        <p class="section-kicker">Questions</p>
-        <h2 id="faq-title" class="reveal">Straight answers.</h2>
-        <div class="accordion">
-          <details>
-            <summary>Is it an exact copy of the record?</summary>
-            <p>No. Rigs are research starting points — not a 100% copy of the record. Use them as a reference, then tweak on your unit. The soft disclaimer is in the product for that reason.</p>
-          </details>
-          <details>
-            <summary>Which Line 6 units work?</summary>
-            <p>Battle-tested on <strong>HX Stomp</strong> and <strong>HX Stomp XL</strong> (<code>.hlx</code>). Also selectable: Helix Floor, Helix LT, HX Effects (no amp/cab), and POD Go (<code>.pgp</code> for POD Go Edit — not a fake <code>.hlx</code>).</p>
-          </details>
-          <details>
-            <summary>What about POD Go?</summary>
-            <p>POD Go is a first-class selectable unit. Exports are real <code>.pgp</code> files for POD Go Edit. We do not ship fake Helix <code>.hlx</code> files for POD Go.</p>
-          </details>
-          <details>
-            <summary>Do I need a Gemini API key?</summary>
-            <p>No. Research runs through the product’s AI gateway. You never paste a visitor Gemini key.</p>
-          </details>
-          <details>
-            <summary>Snapshot vs Stomp mode?</summary>
-            <p>After import (<strong>File → Import</strong> in HX Edit), PAGE to SNAP or STOMP. <strong>Snapshot</strong> = song sections on FS1–FS3 (FS1 is top-left, matching HX Edit silkscreen). <strong>Stomp</strong> = effects on/off.</p>
-          </details>
-          <details>
-            <summary>What’s free vs paid?</summary>
-            <p>Three demos forever with no account. Sign in for three free custom songs. Then subscribe <strong>$6.99/month</strong> or <strong>$75/year</strong> (save $8.88). Subscription opens any song, Create, History, and Gear locker. 50 custom builds per calendar month — demos never count.</p>
-          </details>
-          <details>
-            <summary>Subscription or one-time?</summary>
-            <p>Subscription only — monthly or yearly via Polar. There is no one-time unlock. Manage or cancel anytime via <strong>Account → Manage subscription</strong> (Polar MoR).</p>
-          </details>
-          <details>
-            <summary>Refunds &amp; Polar?</summary>
-            <p>Checkout and billing are handled by Polar as merchant of record. Use Polar’s customer flow for receipts, cancellation, and refund terms — we don’t invent a policy beyond what Polar shows.</p>
-          </details>
-          <details>
-            <summary>Questions or feedback?</summary>
-            <p>Email <a href="mailto:stomplab1@gmail.com">stomplab1@gmail.com</a>. Preset notes inside <a href="https://stomplab.app">stomplab.app</a> help improve how close presets get to the record and train the models — not just a mailbox dump.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section class="final-cta" aria-labelledby="final-title">
-      <div class="wrap final-inner reveal">
-        <h2 id="final-title">Hear a free demo before you subscribe.</h2>
-        <p>Teen Spirit, Sandman, or Comfortably Numb — open the app, download the file, import in HX Edit or POD Go Edit.</p>
-        <div class="cta-row center">
-          <a class="btn btn-primary btn-lg" href="https://stomplab.app">Try a free demo</a>
-          <a class="btn btn-ghost btn-lg" href="#pricing">See pricing</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <div class="footer-brand">
-        <img src="wordmark.svg" width="180" height="26" alt="Stomp Lab">
-        <p>Research any song → HX preset for your unit.</p>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <a href="https://stomplab.app">Open app</a>
-        <a href="https://stomplab.app/upgrade">Upgrade</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#how">How it works</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="mailto:stomplab1@gmail.com">Support</a>
-      </nav>
-      <p class="footer-legal">Stomp Lab is not affiliated with, endorsed by, or sponsored by Line&nbsp;6 or Yamaha Guitar Group. HX, Helix, HX Stomp, POD Go, and related names are trademarks of their respective owners. Product names used for compatibility identification only. Unofficial research tool — presets are starting points, not 100% copies of the record.</p>
-    </div>
-  </footer>
-
-  <div class="mobile-cta" aria-label="Quick action">
-    <a class="btn btn-primary" href="https://stomplab.app">Try a free demo</a>
-  </div>
-
-  <script src="main.js" defer></script>
-</body>
-</html>
+<section class="final-band" aria-labelledby="final-title"><div class="final-wash" aria-hidden="true"></div><div class="wrap final-content reveal"><span class="sl-sticker final-sticker" aria-hidden="true">SL</span><p class="kicker">Your next preset</p><h2 id="final-title">The song in your head.<br>On the board at your feet.</h2><p>Start with a free demo. No account, no card, no API key.</p><a class="button button-primary button-large" href="https://stomplab.app">Try StompLab free <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="site-footer"><div class="wrap footer-main"><div class="footer-brand"><a class="brand" href="#top"><span class="sl-sticker">SL</span><span class="brand-name">StompLab</span></a><p>Type a song. Get that guitar rig.</p></div><nav aria-label="Product links"><p>Product</p><a href="#how">How it works</a><a href="#features">Features</a><a href="#demos">Free demos</a><a href="#pricing">Pricing</a></nav><nav aria-label="Company links"><p>Links</p><a href="https://stomplab.app">Open app ↗</a><a href="https://stomplab.app/upgrade">Upgrade ↗</a><a href="privacy.html">Privacy</a><a href="mailto:stomplab1@gmail.com">Support</a></nav></div><div class="wrap footer-bottom"><p>© 2026 StompLab. Research-based presets are starting points, not 100% copies.</p><p>Not affiliated with Line 6 or Yamaha Guitar Group. Product names identify compatibility only.</p></div></footer>
+<div class="mobile-cta"><a class="button button-primary" href="https://stomplab.app">Try StompLab free <span aria-hidden="true">↗</span></a></div><script src="main.js" defer></script>
+</body></html>
