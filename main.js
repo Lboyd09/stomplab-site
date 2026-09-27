@@ -44,12 +44,16 @@
   var priceValue = document.getElementById("price-value");
   var pricePeriod = document.getElementById("price-period");
   var priceNote = document.getElementById("price-note");
-  var toggleButtons = document.querySelectorAll(".billing-toggle button");
-  if (toggleButtons.length && priceValue && pricePeriod && priceNote) {
-    toggleButtons.forEach(function (btn) {
+  var billingOptions = document.querySelectorAll(".billing-option");
+  if (billingOptions.length && priceValue && pricePeriod && priceNote) {
+    billingOptions.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        toggleButtons.forEach(function (b) { b.classList.remove("is-active"); });
+        billingOptions.forEach(function (b) {
+          b.classList.remove("is-active");
+          b.setAttribute("aria-checked", "false");
+        });
         btn.classList.add("is-active");
+        btn.setAttribute("aria-checked", "true");
         var yearly = btn.getAttribute("data-price") === "yearly";
         priceValue.textContent = yearly ? "$75" : "$6.99";
         pricePeriod.textContent = yearly ? "/ year" : "/ month";
